@@ -39,12 +39,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.findButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupGlm.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.findButton);
             this.groupBox1.Controls.Add(this.checkLock);
             this.groupBox1.Controls.Add(this.textAddr);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
@@ -67,9 +69,10 @@
             // 
             // textAddr
             // 
-            this.textAddr.Location = new System.Drawing.Point(7, 20);
+            this.textAddr.Location = new System.Drawing.Point(45, 20);
+            this.textAddr.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.textAddr.Name = "textAddr";
-            this.textAddr.Size = new System.Drawing.Size(200, 20);
+            this.textAddr.Size = new System.Drawing.Size(162, 20);
             this.textAddr.TabIndex = 0;
             // 
             // groupGlm
@@ -145,6 +148,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "X:";
             // 
+            // findButton
+            // 
+            this.findButton.Location = new System.Drawing.Point(7, 19);
+            this.findButton.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.findButton.Name = "findButton";
+            this.findButton.Size = new System.Drawing.Size(38, 22);
+            this.findButton.TabIndex = 2;
+            this.findButton.Text = "Find";
+            this.findButton.UseVisualStyleBackColor = true;
+            this.findButton.Click += new System.EventHandler(this.findButton_Click);
+            // 
             // GlmViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,6 +193,7 @@
         private System.Windows.Forms.Label glmZ;
         private System.Windows.Forms.Label glmY;
         private System.Windows.Forms.Label glmX;
+        private System.Windows.Forms.Button findButton;
     }
 }
 

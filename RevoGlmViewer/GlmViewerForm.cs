@@ -89,5 +89,16 @@ namespace RevoGlmViewer
         {
             tokenSource?.Dispose();
         }
+
+        private void findButton_Click(object sender, EventArgs e)
+        {
+            SearchForm search = new SearchForm();
+            search.ShowDialog();
+
+            if (search.FoundAddr != 0)
+            {
+                textAddr.Text = search.FoundAddr.ToString("X");
+            }
+        }
     }
 }
